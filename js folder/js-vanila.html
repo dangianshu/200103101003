@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vanial java script</title>
+        <style type="text/css">
+            body{background-color: aquamarine;}
+            div{background-color: blueviolet;height: 300px;width: 300px;}
+            #A1{text-align: center;color: beige;}
+        </style> 
+        <script type="text/javascript">
+            function demointernalalert()
+            {
+                alert("internal alert");
+            }
+            function demointernalconfirm()
+            {
+                if(confirm("are you sure..?")){
+                    alert("yes");
+                }
+                else{
+                    alert("noo");
+                }
+
+            }
+            function demointernalprompt()
+            {
+                var aname=prompt("enter the firt name...");
+                var bname=prompt("enter the last name...");
+                alert(aname+" "+bname);
+            }
+                
+                function bodyBGgreen(){
+                document.body.style.backgraundcolor="green";}
+
+                function divBGgray(){
+                    document.getElementById("A1").style.backgraundcolor="gray";
+                }
+                function divBGDynamic(){
+                    document.getElementById("A1").style.backgroundColor=prompt("enter the color name");
+                }
+                function bodyBGDynamic(){
+                    Document.body.style.backgraundcolor=prompt("enter the color name");
+                }
+                function bodyBGAC1(){
+				document.body.style.backgroundColor=document.getElementById("AC1").value;
+			}
+			function divBGAC2(){
+				document.getElementById("A1").style.backgroundColor=document.getElementById("AC2").value;
+			}
+            
+            
+             </script>
+             <script src="demo.js"></script>
+            </head>
+    <body>
+        <div id="A1">
+            hey budy
+        </div><hr/>
+        <input type="button" value="alert inline" onclick="alert('hey guys')"/>&nbsp;&nbsp;
+        <input type="button" value="confirm inline" onclick="confirm('are you sure')"/>&nbsp;&nbsp;
+        <input type="button" value="prompt inline" onclick="prompt('enter the first name..')"/>&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="alert internal" onclick="demointernalalert()"/>&nbsp;&nbsp;
+        <input type="button" value="confirm internal" onclick="demointernalconfirm()"/>&nbsp;&nbsp;
+        <input type="button" value="prompt internal" onclick="demointernalprompt()"/>&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="alert external" onclick="demoexternalalert()"/>&nbsp;&nbsp;
+        <input type="button" value="confirm external" onclick="demoexternalconfirm()"/>&nbsp;&nbsp;
+        <input type="button" value="prompt external" onclick="denoexternalprompt()"/>&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="body bg green" onclick="bodyBGgreen()"/>&nbsp;&nbsp;
+        <input type="button" value="div bg gray" onclick="divBGgray()"/>&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="body bg prompt" onclick="bodyBGDynamic()"/>&nbsp;&nbsp;
+        <input type="button" value="div bg prompt" onclick="divBGDynamic()"/>&nbsp;&nbsp;
+        <hr/>
+        <input type="color" id="AC1" onchange="bodyBGAC1()"/>&nbsp;&nbsp;&nbsp;
+        <input type="color" id="AC2" onchange="divBGAC2()"/>
+
+    </body>
+</html>
