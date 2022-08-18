@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Open+Sans:ital,wght@0,300;0,400;1,800&display=swap');
+:root{
+    --main-bg-color:#2874f0;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}   
+header{
+    
+    background-color: var(--main-bg-color);
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 89px;
+    padding: 0 27px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    height: 56px;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding:  0 21px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    color: rgb(221, 183, 13);
+    font-weight:bolder;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 470px;
+    height: 28px;
+    border-radius: 5px;
+    margin: 0 -0 0 66px;
+    padding: 0 16px;
+    border: 3px solid rgba(189, 14, 78, 0.382);
+    
+}
+.logo1{
+    display: flex;
+    align-items: center;
+}
+.logo1 img{
+    height: 22px;
+    display: inline;
+    margin: 0 0 0 7px;
+}
+.slider{
+    margin: auto;
+    width: 80vw;
+    margin: 12px auto;
+}
+.card{
+    max-width: 91vw;
+    margin:37px auto;
+}
+.cards{
+    display: flex;
+    overflow: hidden;
+}
+.card h2{
+    font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Open Sans', sans-serif;
+}
+.card-item{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.my-1{
+    margin: 5px 0;
+}
+.my2{
+    margin: 21px auto;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    min-height: calc(100vh - 56px - 13vh);
+}
+p:hover{
+    color: black;
+
+}
+footer{
+    height: 13vh;
+    background-color: var(--main-bg-color);
+    color: aliceblue;
+    font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Open Sans', sans-serif;
+}
